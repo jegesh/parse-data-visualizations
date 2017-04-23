@@ -1,0 +1,10 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Parse Charts",
+      "description": "This app displays data visualizations of your parse projects",
+      "icon": ""
+    },
+    ...
+  }
+}
