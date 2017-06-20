@@ -1,0 +1,56 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Parse Charts",
+      "description": "This app displays data visualizations of your parse projects",
+      "icon": "https://github.com/jegesh/parse-data-visualizations/blob/master/images/charts_icon.png?raw=true",
+      "styles": {},
+      "actions": {
+        "$show": {
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Parse Projects",
+            "menu": {
+              "image": "https://github.com/jegesh/parse-data-visualizations/blob/master/images/new_project.png?raw=true",
+              "href": {
+                "url": "https://github.com/jegesh/parse-data-visualizations/blob/master/add_project.json"
+              }
+            }
+          },
+          "sections": [
+            {
+              "{{#if (!$cache.items.projects || $cache.items.projects.length == 0)}}": [
+                {
+                  "items": [
+                    {
+                      "type": "label",
+                      "text": "No Projects Yet!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "{{#else }}": {
+                "{{#each $cache.items.projects}}": {
+                  "items": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        
+                      ]
+                    },
+
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

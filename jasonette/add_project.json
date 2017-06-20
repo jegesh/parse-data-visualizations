@@ -1,0 +1,67 @@
+{
+  "$jason": {
+    "head": {
+      "title": "New Project"
+    },
+    "body": {
+            "header": {
+                "title": "New Project"
+            },
+            "sections": [
+                {
+                  "items":[
+                    {
+                      "type": "label",
+                      "text": "Project Name:"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "projectName"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Parse App Id:"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "appId"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Rest API Key:"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "apiKey"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Master Key:"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "masterKey"
+                    },
+                    {
+                      "type": "button",
+                      "text": "SAVE",
+                      "style":{
+                        "width": "100%"
+                      },
+                      "href": {
+                        "url": "https://github.com/jegesh/parse-data-visualizations/blob/master/index.json",
+                        "options": {
+                          "name": {{"$get.projectName"}},
+                          "appId": {{"$get.appId"}},
+                          "apiKey": {{"$get.apiKey"}},
+                          "masterKey":{{"$get.masterKey"}}
+
+                        }
+                      }
+                    }
+                  ]
+                }
+            ]
+        }
+  }
+}
